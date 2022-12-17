@@ -1,1 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+:root {
+  --primary: #eb5e28;
+  --black: #181616;
+  --grey: #727272;
+}
+.container {
+  margin: 4rem;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  border: 1px solid lightgray;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.heading {
+  color: var(--black);
+  font-family: 'Oleo Script', cursive;
 
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+}
+.description {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding: 1rem 0;
+  color: var(--grey);
+}
+.primary-btn {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 1rem 2rem;
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+  border-radius: 0.5rem;
+  color: white;
+}
+.primary-btn:hover {
+  background-color: #da5622;
+  border: 1px solid #da5622;
+  cursor: pointer;
+}
+.secondary-btn {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0 1rem;
+  padding: 1rem 2rem;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 0.5rem;
+  color: var(--primary);
+}
+.secondary-btn:hover {
+  border: 1px solid var(--primary);
+  cursor: pointer;
+}
