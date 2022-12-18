@@ -84,7 +84,7 @@ input:focus {
   padding: 0.8rem 0.8rem;
   background-color: #bdece7;
   border-radius: 0.5rem;
-  width: 50%;
+  width: fit-content;
   height: 2.5em;
   align-items: center;
   color: #264653;
