@@ -15,10 +15,10 @@ function yes() {
 }
 function no() {
   let feedbackHeading = document.getElementById('feedbackHeading');
-  feedbackHeading.innerText = 'Its Okay, urgent things grab times 🍃';
+  feedbackHeading.innerText =
+    'Its Okay, we will meet you in the upcoming classes 🍃';
   let feedbackDesc = document.getElementById('feedbackDesc');
-  feedbackDesc.innerText =
-    'We are looking forward your presence in the upcoming classes.';
+  feedbackDesc.innerText = 'Please watch the recordings of missed classes.';
   let feedbackPriBtn = document.getElementById('feedbackPriBtn');
   feedbackPriBtn.style.display = 'none';
   let feedbackSecBtn = document.getElementById('feedbackSecBtn');
@@ -30,9 +30,8 @@ function no() {
 function cube() {
   let number = document.getElementById('cubeNumber').value;
   let result = number * number * number;
+  userValue.innerText = number + '³';
   cubeResult.innerText = result;
-  let input = document.getElementById('cubeNumber').value;
-  userValue.innerText = input + '³';
 }
 
 // Split Bill function
