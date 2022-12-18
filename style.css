@@ -12,16 +12,15 @@
 }
 .container {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  margin: 4rem;
+  margin: 10rem;
   padding: 2rem;
   border-radius: 1.5rem;
   border: 1px solid lightgray;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
-.container:nth-child(3) {
+.container:nth-child(2) {
   flex-direction: row-reverse;
 }
 .content-left {

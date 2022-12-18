@@ -31,6 +31,8 @@ function cube() {
   let number = document.getElementById('cubeNumber').value;
   let result = number * number * number;
   cubeResult.innerText = result;
+  let input = document.getElementById('cubeNumber').value;
+  userValue.innerText = input + '³';
 }
 
 // Split Bill function
