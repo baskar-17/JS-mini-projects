@@ -24,3 +24,20 @@ function no() {
   let feedbackSecBtn = document.getElementById('feedbackSecBtn');
   feedbackSecBtn.style.display = 'none';
 }
+
+// Cube Calculation
+
+function cube() {
+  let number = document.getElementById('cubeNumber').value;
+  let result = number * number * number;
+  cubeResult.innerText = result;
+}
+
+// Split Bill function
+
+function bill() {
+  let amount = document.getElementById('billAmount').value;
+  let person = document.getElementById('billPerson').value;
+  let result = (amount / person).toFixed(2);
+  billResult.innerText = '₹' + result;
+}

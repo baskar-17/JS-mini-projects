@@ -13,18 +13,43 @@
 
     <!------------ Feedback Card ------------>
     <section class="container">
-        <h1 id="feedbackHeading" class="heading">Did you attend the class yesterday?</h1>
-        <p id="feedbackDesc" class="description">Help us to maintain a book of record who attendeding classess regularly
-            by
-            answering this
-            question.</p>
-        <button id="feedbackPriBtn" class="primary-btn" onclick="yes()">Yes, I attend</button>
-        <button id="feedbackSecBtn" class="secondary-btn" onclick="no()">No, I'm unable to</button>
+        <div class="content">
+            <h1 id="feedbackHeading" class="heading">Did you attend the class yesterday?</h1>
+            <p id="feedbackDesc" class="description">Help us to maintain a book of record who attendeding classess
+                regularly by answering this question.</p>
+            <button id="feedbackPriBtn" class="primary-btn" onclick="yes()">Yes, I attend</button>
+            <button id="feedbackSecBtn" class="secondary-btn" onclick="no()">No, I'm unable to</button>
+        </div>
     </section>
 
+    <!------------ Cube Calculator ------------>
+    <section class="container">
+        <div class="content-left">
+            <img src="assets/school_education.png" alt="Study Illustration">
+        </div>
+        <div class="content-left">
+            <h1 id="cubeHeading" class="heading">Find out the cube of any number 🎲</h1>
+            <p id="cubeDesc" class="description">Simple tool to calculate cube of any number, Try yourself!</p>
+            <input type="text" name="number" id="cubeNumber" class="number" placeholder="Enter a number">
+            <button id="cubePriBtn" class="primary-btn" onclick="cube()">Calculate</button>
+            <p class="result">Answer is: <span class="result-text" id="cubeResult"></span> </p>
+        </div>
+    </section>
 
-
-
+    <!------------ Bill Splitter ------------>
+    <section class="container">
+        <div class="content-left">
+            <img src="assets/3d Finance.png" alt="Bill Illustration">
+        </div>
+        <div class="content-left">
+            <h1 id="billHeading" class="heading">Split your bills 🧾</h1>
+            <p id="billDesc" class="description">Simple tool to split your total payable bills, Try yourself!</p>
+            <input type="text" name="number" id="billAmount" class="billnumber" placeholder="Enter the amount">
+            <input type="text" name="number" id="billPerson" class="billnumber" placeholder="Enter persons">
+            <button id="billPriBtn" class="primary-btn" onclick="bill()">Split Bill</button>
+            <p class="result">Amount per person: <span class="result-text" id="billResult"></span> </p>
+        </div>
+    </section>
 
     <script src="app.js"></script>
 </body>

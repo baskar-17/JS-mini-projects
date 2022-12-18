@@ -11,11 +11,27 @@
   --grey: #727272;
 }
 .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
   margin: 4rem;
   padding: 2rem;
   border-radius: 1.5rem;
   border: 1px solid lightgray;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.container:nth-child(3) {
+  flex-direction: row-reverse;
+}
+.content-left {
+  width: 48%;
+}
+.content-left img {
+  width: 100%;
+}
+.content-right {
+  width: 48%;
 }
 .heading {
   color: var(--black);
@@ -30,10 +46,40 @@
   padding: 1rem 0;
   color: var(--grey);
 }
+input {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.8rem 0.8rem;
+  border: 1px solid lightgray;
+  border-radius: 0.5rem;
+  width: 80%;
+}
+input:focus {
+  outline: none;
+  border: 1px solid var(--primary);
+}
+.billnumber {
+  width: 35%;
+}
+.result {
+  font-size: 1rem;
+  margin-top: 1rem;
+  padding: 0.8rem 0.8rem;
+  background-color: #bdece7;
+  border-radius: 0.5rem;
+  width: 80%;
+  height: 2.5em;
+  align-items: center;
+  color: #264653;
+}
+.result-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
 .primary-btn {
   font-size: 1rem;
   font-weight: 500;
-  padding: 1rem 2rem;
+  padding: 0.8rem 1.6rem;
   background-color: var(--primary);
   border: 1px solid var(--primary);
   border-radius: 0.5rem;
@@ -48,7 +94,7 @@
   font-size: 1rem;
   font-weight: 500;
   margin: 0 1rem;
-  padding: 1rem 2rem;
+  padding: 0.8rem 1.6rem;
   background-color: white;
   border: 1px solid white;
   border-radius: 0.5rem;
