@@ -3,26 +3,28 @@
 // Feedback Card
 
 function yes() {
-  let feedbackHeading = document.getElementById('feedbackHeading');
-  feedbackHeading.innerText = 'Thanks for attending today class 🎉';
-  let feedbackDesc = document.getElementById('feedbackDesc');
-  feedbackDesc.innerText =
-    'Your are on track, We appriciate your participation.';
-  let feedbackPriBtn = document.getElementById('feedbackPriBtn');
-  feedbackPriBtn.style.display = 'none';
-  let feedbackSecBtn = document.getElementById('feedbackSecBtn');
-  feedbackSecBtn.style.display = 'none';
+  let feedbackHeading = (document.getElementById('feedbackHeading').innerText =
+    'Thanks for attending today class 🎉');
+  let feedbackDesc = (document.getElementById('feedbackDesc').innerText =
+    'Your are on track, We appriciate your participation.');
+  let feedbackPriBtn = (document.getElementById(
+    'feedbackPriBtn'
+  ).style.display = 'none');
+  let feedbackSecBtn = (document.getElementById(
+    'feedbackSecBtn'
+  ).style.display = 'none');
 }
 function no() {
-  let feedbackHeading = document.getElementById('feedbackHeading');
-  feedbackHeading.innerText =
-    'Its Okay, we will meet you in the upcoming classes 🍃';
-  let feedbackDesc = document.getElementById('feedbackDesc');
-  feedbackDesc.innerText = 'Please watch the recordings of missed classes.';
-  let feedbackPriBtn = document.getElementById('feedbackPriBtn');
-  feedbackPriBtn.style.display = 'none';
-  let feedbackSecBtn = document.getElementById('feedbackSecBtn');
-  feedbackSecBtn.style.display = 'none';
+  let feedbackHeading = (document.getElementById('feedbackHeading').innerText =
+    'Its Okay, we will meet you in the upcoming classes 🍃');
+  let feedbackDesc = (document.getElementById('feedbackDesc').innerText =
+    'Please watch the recordings of missed classes.');
+  let feedbackPriBtn = (document.getElementById(
+    'feedbackPriBtn'
+  ).style.display = 'none');
+  let feedbackSecBtn = (document.getElementById(
+    'feedbackSecBtn'
+  ).style.display = 'none');
 }
 
 // Cube Calculation
