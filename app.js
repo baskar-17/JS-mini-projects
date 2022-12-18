@@ -28,6 +28,11 @@ function cube() {
   let result = number * number * number;
   userValue.innerText = number + '³' + ' ' + 'is' + ' ';
   cubeResult.innerText = result;
+
+  if (number == 0) {
+    userValue.innerText = ' ';
+    cubeResult.innerText = 'Please Enter a value';
+  }
 }
 
 // Split Bill function
@@ -37,6 +42,10 @@ function bill() {
   let person = document.getElementById('billPerson').value;
   let result = (amount / person).toFixed(2);
   billResult.innerText = '₹' + ' ' + result;
+
+  if (person == 0) {
+    billResult.innerText = '₹' + ' ' + amount;
+  }
 }
 
 // Medium Additoin function
