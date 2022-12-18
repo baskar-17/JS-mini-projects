@@ -42,3 +42,5 @@ function bill() {
   let result = (amount / person).toFixed(2);
   billResult.innerText = '₹' + result;
 }
+
+// Medium Additoin function
