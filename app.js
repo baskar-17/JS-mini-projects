@@ -1,23 +1,26 @@
 // Bunch of codes with small js projects
 
+// Feedback Card
+
 function yes() {
-  let heading = document.getElementById('heading');
-  heading.innerText = 'Thanks for attending today class 🎉';
-  let desc = document.getElementById('desc');
-  desc.innerText = 'Your are on track, We appriciate your participation.';
-  let priBtn = document.getElementById('priBtn');
-  priBtn.style.display = 'none';
-  let secBtn = document.getElementById('secBtn');
-  secBtn.style.display = 'none';
+  let feedbackHeading = document.getElementById('feedbackHeading');
+  feedbackHeading.innerText = 'Thanks for attending today class 🎉';
+  let feedbackDesc = document.getElementById('feedbackDesc');
+  feedbackDesc.innerText =
+    'Your are on track, We appriciate your participation.';
+  let feedbackPriBtn = document.getElementById('feedbackPriBtn');
+  feedbackPriBtn.style.display = 'none';
+  let feedbackSecBtn = document.getElementById('feedbackSecBtn');
+  feedbackSecBtn.style.display = 'none';
 }
 function no() {
-  let heading = document.getElementById('heading');
-  heading.innerText = 'Its Okay, urgent things grabs time 😓';
-  let desc = document.getElementById('desc');
-  desc.innerText =
+  let feedbackHeading = document.getElementById('feedbackHeading');
+  feedbackHeading.innerText = 'Its Okay, urgent things grab times 🍃';
+  let feedbackDesc = document.getElementById('feedbackDesc');
+  feedbackDesc.innerText =
     'We are looking forward your presence in the upcoming classes.';
-  let priBtn = document.getElementById('priBtn');
-  priBtn.style.display = 'none';
-  let secBtn = document.getElementById('secBtn');
-  secBtn.style.display = 'none';
+  let feedbackPriBtn = document.getElementById('feedbackPriBtn');
+  feedbackPriBtn.style.display = 'none';
+  let feedbackSecBtn = document.getElementById('feedbackSecBtn');
+  feedbackSecBtn.style.display = 'none';
 }
