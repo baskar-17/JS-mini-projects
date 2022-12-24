@@ -33,6 +33,16 @@ function cube() {
     userValue.innerText = ' ';
     cubeResult.innerText = 'Please Enter a value';
   }
+  document.getElementById('cubeNumber').value = '';
+}
+
+function squre() {
+  let squreValue = document.getElementById('squreNumber').value;
+  let squreResult = squreValue * squreValue;
+  squreUserValue.innerText = squreValue + '²' + ' ' + 'is' + ' ';
+  squreResultValue.innerText = squreResult;
+
+  document.getElementById('squreNumber').value = '';
 }
 
 // Split Bill function

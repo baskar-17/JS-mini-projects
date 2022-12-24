@@ -123,10 +123,9 @@ input:focus {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1200px) {
   .container {
-    display: grid;
-    margin: 2rem 5rem;
+    margin: 3rem 6rem;
   }
   .content-left {
     width: 100%;
@@ -136,5 +135,61 @@ input:focus {
   }
   .content-right {
     width: 100%;
+  }
+  .section-container {
+    text-align: center;
+    margin: 2rem 6rem;
+  }
+  .main-logo {
+    width: 10%;
+    object-fit: cover;
+  }
+  .section-heading {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    display: grid;
+    margin: 2rem 2rem;
+  }
+  .content-left {
+    width: 100%;
+  }
+  .content-left img {
+    width: 100%;
+  }
+  .content-right {
+    width: 100%;
+  }
+  .section-heading {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  .main-logo {
+    width: 20%;
+    object-fit: cover;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .section-container {
+    text-align: center;
+    margin: 2rem 2rem;
+  }
+  .container {
+    display: grid;
+    margin: 2rem 1rem;
+  }
+  .section-heading {
+    font-size: 3rem;
+    text-align: center;
+    line-height: 3rem;
+  }
+  .main-logo {
+    width: 20%;
+    object-fit: cover;
   }
 }
